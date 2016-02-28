@@ -1,0 +1,23 @@
+<template name="homeTeam">
+  <div class="container team">
+    <header>
+      <form class="new-player">
+        <input type="text" name="player" placeholder="Name" />
+        <input type="submit" value="Add Player">
+      </form>
+    </header>
+    <ul>
+          {{#each players}}
+            {{> player}}
+          {{/each}}
+        </ul>
+      </div>
+</template>
+
+<template name="player">
+  <li>
+    <button class="delete">&times;</button>
+
+    <span class="text">{{text}}</span>
+  </li>
+</template>

@@ -1,0 +1,57 @@
+/* CSS declarations go here */
+.team {
+  font-family: sans-serif;
+  background-image: linear-gradient(to bottom, #bbCA58, #A2CA58 100%);
+  font-size: 14px;
+  margin: 0 auto;
+
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.team header {
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+
+.team h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.new-player input {
+  padding: 5px 5px;
+}
+
+.new-player input:focus{
+  outline: 0;
+}
+
+.team ul {
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 0;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1.5em;
+  border: none;
+  position: relative;
+}
+
+.team li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+}
+
+.team li .text {
+  margin-left: 10px;
+}

@@ -1,0 +1,70 @@
+<template name="homeIndex">
+  <style>
+  a,
+  a:focus,
+  a:hover {
+    color: #fff;
+  }
+
+  /* Custom default button */
+  .btn-default,
+  .btn-default:hover,
+  .btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+
+
+  /*
+   * Base structure
+   */
+
+  html,
+  body {
+  /*css for full size background image*/
+    background: url(images/cricketbackground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 100%;
+    background-color: #060;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    /*-webkit-filter: blur(10px);
+    filter: blur(10px);*/
+  }
+
+  </style>
+
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+
+        <div class="inner cover">
+          <h1 class="cover-heading">Junior Cricket Manager</h1>
+
+          <p class="lead">A simple solution for scoring games and keeping statistics
+            for junior (average) cricket.
+
+          </p>
+
+          <p class="lead"><a class="btn btn-lg btn-info" href="{{pathFor 'homeAbout'}}">Learn
+          more</a></p>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <!-- Validation -->
+
+            <p>© 2016 Stephen Baldwin</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</template>

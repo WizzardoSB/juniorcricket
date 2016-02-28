@@ -1,0 +1,25 @@
+<template name="homeGames">
+  <div class="container team">
+    <header>
+      <form class="new-game">
+        <input type="text" name="opposition" placeholder="Opposition" />
+        <input type="submit" value="Score a New Game">
+      </form>
+    </header>
+    <ul>
+          {{#each games}}
+            {{> game}}
+          {{/each}}
+        </ul>
+      </div>
+</template>
+
+<template name="game">
+  <li>
+    <button class="delete">&times;</button>
+    <button class="scorethis">Score Now</button>
+
+    <span class="text">{{opposition}}</span>
+    <span class="text">{{simpleDate createdAt}}</span>
+  </li>
+</template>
